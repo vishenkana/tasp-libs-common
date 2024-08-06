@@ -1,0 +1,23 @@
+Checks: >
+  *,
+  -llvmlibc-*,
+  -llvm-header-guard,
+  -modernize-use-trailing-return-type,
+  -fuchsia-default-arguments-calls,
+  -fuchsia-default-arguments-declarations,
+  -fuchsia-overloaded-operator,
+  -altera-unroll-loops,
+  -altera-id-dependent-backward-branch,
+  -altera-struct-pack-align,
+  -misc-no-recursion,
+  -misc-include-cleaner,
+  -bugprone-easily-swappable-parameters,
+  -cppcoreguidelines-pro-type-vararg,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -hicpp-vararg,
+  -readability-magic-numbers
+WarningsAsErrors: ''
+HeaderFilterRegex: '/(src|include)'
+CheckOptions:
+  - key: cppcoreguidelines-macro-usage.AllowedRegexp
+    value: '^(init_template_function|generate_nested_class)'

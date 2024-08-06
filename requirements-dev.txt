@@ -1,0 +1,3 @@
+libyaml-cpp-dev
+libmsgsl-dev
+libjsoncpp-dev

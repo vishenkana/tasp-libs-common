@@ -1,0 +1,23 @@
+Source: libtasp-common
+Section: libs
+Priority: optional
+Maintainer: dummy
+Standards-Version: 4.5.1
+
+Package: libtasp-common-dev
+Section: libdevel
+Architecture: amd64
+Multi-Arch: same
+Depends: libtasp-common (= ${binary:Version}), ${misc:Depends}
+Description: Software package of technical analysis common libraries - development files
+ A library with the general capabilities of the software package of technical
+ analysis project. Allows programs to work with the configuration files,
+ logging, execute commands, process ID and user identifier.
+
+Package: libtasp-common
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Software package of technical analysis common libraries
+ A library with the general capabilities of the software package of technical
+ analysis project. Allows programs to work with the configuration files,
+ logging, execute commands, process ID and user identifier.

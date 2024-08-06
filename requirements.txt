@@ -1,0 +1,2 @@
+libyaml-cpp0.6
+libjsoncpp1
